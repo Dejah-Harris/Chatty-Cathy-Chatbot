@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <title>CC Chatbot</title>
+      <style>
+          body {
+              background-color: #f0e6ff;  /* Light purple background */
+              margin: 0;
+              padding: 20px;
+          }
+          
+          #chat-container {
+              max-width: 600px;
+              margin: 20px auto;
+              padding: 20px;
+              border: 1px solid #9966ff;  /* Darker purple border */
+              border-radius: 5px;
+              background-color: #ffffff;  /* White background for contrast */
+              box-shadow: 0 2px 10px rgba(153, 102, 255, 0.2);  /* Subtle purple shadow */
+          }
+          
+          #chat-messages {
+              height: 300px;
+              overflow-y: auto;
+              margin-bottom: 10px;
+              padding: 10px;
+              border: 1px solid #e6e6ff;  /* Very light purple border */
+              border-radius: 3px;
+          }
+          
+          #user-input {
+              width: 80%;
+              padding: 8px;
+              border: 1px solid #9966ff;
+              border-radius: 3px;
+              margin-right: 5px;
+          }
+          
+          #send-button {
+              padding: 8px 15px;
+              background-color: #9966ff;
+              color: white;
+              border: none;
+              border-radius: 3px;
+              cursor: pointer;
+          }
+          
+          #send-button:hover {
+              background-color: #8533ff;
+          }
+          
+          /* Style for chat messages */
+          #chat-messages div {
+              margin: 5px 0;
+              padding: 5px;
+              border-radius: 3px;
+              background-color: #f8f5ff;  /* Very light purple for messages */
+          }
+      </style>
+  </head>
+  <body>
+    <div id="chat-container">
+        <div id="chat-messages"></div>
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <button id="send-button">Send</button>
+    </div>
+    <script src="chatbot.js"></script>
+  </body>
+</html>
